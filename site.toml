@@ -8,3 +8,6 @@ name = "site"
 
 # This page should be the root of your website. It's important.
 page = "https://pepper-baritone-130.notion.site/Long-Phan-bff4ac45b24b4556826feacfb14ce644"
+
+# optionally apply notion's dark mode, remove the line below to use the default light mode
+theme = "dark"
