@@ -12,7 +12,7 @@ jobs:
       - name: Checkout loconotion
         uses: actions/checkout@v2
         with:
-          repository: zvedenyuk/loconotion
+          repository: justinphan3110/loconotion
           path: loconotion
       - name: Checkout this repo
         uses: actions/checkout@v2
