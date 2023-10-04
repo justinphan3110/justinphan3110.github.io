@@ -500,6 +500,14 @@ a.pub_resources:hover, a.pub_details:focus {
 a.coauthor {
   color: #727272; }
 
+
+.emoji-icon {
+    width: 1.8em;        /* Match the width to the current font size */
+    height: 1.8em;       /* Match the height to the current font size */
+    vertical-align: middle;  /* Aligns the image to the middle of the text */
+    margin-right: 0.2em;    /* Some space between the image and the text */
+}
+
 a.coauthor:hover, a.coauthor:focus {
   font-weight: 700;
   color: #555555; }
