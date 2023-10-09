@@ -506,6 +506,7 @@ a.coauthor {
     height: 1.8em;       /* Match the height to the current font size */
     vertical-align: middle;  /* Aligns the image to the middle of the text */
     margin-right: 0.2em;    /* Some space between the image and the text */
+    margin-bottom:  0.5em;;
 }
 
 a.coauthor:hover, a.coauthor:focus {
