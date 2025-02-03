@@ -35,288 +35,268 @@
 
 <body>
   <div class="wrapper">
-    <header>
-
-      <div class="avatar">
-        <img class="avatar" src="assets/img/long_phan.png" alt="Logo" />
+    <div class="sidebar">
+      <div class="profile-section">
+        <img class="avatar" src="assets/img/long_phan.png" alt="Long Phan" />
+        <h1>Long Phan</h1>
+        
+        <div class="social-links">
+          <a href="mailto:my_first_name_at_safe.ai"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/justinphan3110"><i class="fab fa-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=fVRQn4wAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/long-phan-3110"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
+    </div>
+
+    <main class="content">
+      <section class="bio">
+        <p>Hi, I'm currently a Research Engineer at <a href="https://www.safe.ai/">Center for AI Safety</a>, working with <a href="https://scholar.google.com/citations?user=czyretsAAAAJ&hl=en">Dan Hendrycks</a>. I am interested in <b>AI Safety</b>.</p>
+        <br/>
+        <p>I received a B.S in Computer Science from Case Western Reserve University in 2023. <span>During my undergraduate studies, I worked with <a href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">Trieu H. Trinh</a> and <a href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a> (DeepMind).</span></p>
+      </section>
+
+      <section class="publications">
+        <h2>Selected Research <a href="https://scholar.google.com/citations?user=fVRQn4wAAAAJ&hl=en" class="scholar-link">[Google Scholar]</a></h2>
+        <ul>
+          <!-- Humanity's Last Exam -->
+          <li>
+            <img src="assets/img/hle_logo.svg" alt="Brain" class="emoji-icon" style="margin-top: 3px;">
+            <a href="https://arxiv.org/abs/2501.14249">Humanity's Last Exam</a>
+            <br />
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=Wm-EioQAAAAJ&hl=it&oi=ao" target="_blank">Alice Gatti</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=Jmbr0B8AAAAJ&hl=en" target="_blank">Ziwen Han</a>,
+            <a class="coauthor" href="https://nat.quest/" target="_blank">Nathaniel Li</a>,
+            Josephina Hu,
+            Hugh Zhang,
+            <span style="white-space: nowrap;"><b>{</b> <i>with 700+ co-authors</i> <b>}</b> (<a href="https://lastexam.ai" class="pub_details">see full list</a>)</span>
+            <br />
+            <a class="coauthor" href="https://www.linkedin.com/in/yutingyue/" target="_blank">Summer Yue</a>*,
+            <a class="coauthor" href="https://www.linkedin.com/in/alexandrwang/" target="_blank">Alexandr Wang</a>*,
+            <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>*
+            <br /> [<img src="assets/img/nytime-logo.jpg" alt="NYTimes Logo" style="height: 2em; vertical-align: middle;"><a class="pub_details" href="https://www.nytimes.com/2025/01/23/technology/ai-test-humanitys-last-exam.html" target="_blank">NYTimes</a> ]
+          </li>
+          <!-- HarmBench-->
+          <li>
+            <img src="assets/img/harmbench_logo.png" alt="Brain" class="emoji-icon-harmbench">
+            <a href="https://www.harmbench.org">HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal</a>
+            <br />
+            <a class="coauthor" href="https://scholar.google.com/citations?user=fGeEmLQAAAAJ&hl=en" target="_blank">Mantas
+              Mazeika</a>,
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://xuwangyin.github.io/" target="_blank">Xuwang Yin</a>,
+            <a class="coauthor" href="https://andyzoujm.github.io" target="_blank">Andy Zou</a>,
+            <a class="coauthor" href="https://sites.google.com/west.cmu.edu/zifan-wang/home" target="_blank">Zifan
+              Wang</a>,
+              <a class="coauthor" href="https://www.normanmu.com/" target="_blank">Norman Mu</a>,
+              Ellie Sakhaee,
+            <a class="coauthor" href="https://nat.quest/" target="_blank">Nathaniel Li</a>,
+            <a class="coauthor" href="https://stevenbas.art/" target="_blank">Steven Basart</a>,
+            <a class="coauthor" href="https://aisecure.github.io/" target="_blank">Bo Li</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=5H0arvkAAAAJ&hl=en" target="_blank">David Forsyth</a>,
+            <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>
+            <br /> [ <a class="pub_details" href="https://github.com/centerforaisafety/HarmBench"
+              target="_blank">Code</a> | <a class="pub_details" href="https://www.harmbench.org/"
+              target="_blank">Site</a>]
+          </li>
+
+          <!-- RepE -->
+          <li>
+            <img src="assets/img/repe_logo.png" alt="Brain" class="emoji-icon">
+            <a href="https://arxiv.org/abs/2310.01405">Representation Engineering: A Top-Down Approach to AI Transparency</a>
+            <br />
+            <a class="coauthor" href="https://andyzoujm.github.io" target="_blank">Andy Zou</a>,
+            <strong class="myself">Long Phan</strong>,
+            Sarah Chen,
+            James Campbell,
+            Phillip Guo,
+            Richard Ren,
+            <a class="coauthor" href="https://aypan17.github.io/" target="_blank">Alexander Pan</a>,
+            <a class="coauthor" href="https://xuwangyin.github.io/" target="_blank">Xuwang Yin</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=fGeEmLQAAAAJ&hl=en" target="_blank">Mantas
+              Mazeika</a>,
+            Ann-Kathrin Dombrowski,
+            Shashwat Goel,
+            <a class="coauthor" href="https://nat.quest/" target="_blank">Nathaniel Li</a>,
+            Michael J. Byun,
+            <a class="coauthor" href="https://sites.google.com/west.cmu.edu/zifan-wang/home" target="_blank">Zifan
+              Wang</a>,
+            Alex Mallen,
+            <a class="coauthor" href="https://stevenbas.art/" target="_blank">Steven Basart</a>,
+            <a class="coauthor" href="https://cs.stanford.edu/~sanmi/" target="_blank">Sanmi Koyejo</a>,
+            <a class="coauthor" href="https://dawnsong.io/" target="_blank">Dawn Song</a>,
+            <a class="coauthor" href="https://www.cs.cmu.edu/~mfredrik/" target="_blank">Matt Fredrikson</a>,
+            <a class="coauthor" href="https://zicokolter.com/" target="_blank">Zico Kolter</a>,
+            <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>
+            <br /> [ <a class="pub_details" href="https://github.com/andyzoujm/representation-engineering"
+              target="_blank">Code</a> | <a class="pub_details" href="https://www.ai-transparency.org/"
+              target="_blank">Demo</a> | <a class="pub_details" href="https://www.foxnews.com/us/researchers-shed-light-how-read-control-ai-systems-minds"
+              target="_blank">Fox News</a>]
+          </li>
+
+          <!-- ViPubmed -->
+          <li><a href="https://arxiv.org/abs/2210.05598">🌸 Enriching Biomedical Knowledge for Low-resource
+              Language Through Large-Scale Translation</a> <span class="vendor">EACL 2023</span>
+            <br />
+            <b>{</b>
+            <strong class="myself">Long Phan</strong>,
+            Tai Dang,
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a> <b>}</b>,
+           Vy Phan,
+           Lam Chau,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a>
+
+            <br /> [ <a class="pub_details" href="https://github.com/vietai/ViPubmed">Code</a> ]
+          </li>
+
+          <!-- MTet -->
+          <li><a href="https://arxiv.org/abs/2210.05610">🌸 MTet: Multi-domain Translation for English and Vietnamese</a>
+            <!-- <span class="vendor">In review @ EACL 2023</span> -->
+            <br />
+            <b>{</b>
+            <a class="coauthor" href="https://github.com/ntkchinh">Chinh Ngo</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a>,
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a><b> }</b>,
+            <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>
+            <a class="coauthor" href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a>
+            <br /> [ <a class="pub_details" href="https://github.com/vietai/mtet">Code</a>
+            | <a class="pub_details" href="https://research.vietai.org/mtet/">Blog</a>
+            ]
+          </li>
 
 
-      <h1 class="title">Long Phan</h1>
 
-    
-      <div class="contact">
-        <i class="fas fa-envelope fa-fw"></i> my_first_name_at_safe.ai
-        <br /><a href="https://github.com/justinphan3110"><i class="fab fa-github fa-fw"></i> Github</a>
-        <br /><a href="https://scholar.google.com/citations?user=fVRQn4wAAAAJ&hl=en"><i
-            class="ai ai-google-scholar fa-fw"></i> Google Scholar</a>
-        <br /><a href="https://www.linkedin.com/in/long-phan-3110"><i class="fab fa-linkedin fa-fw"></i> LinkedIn</a>
-        <!-- <br /><a
-          href="https://docs.google.com/gview?url=https://github.com/justinphan3110/Resume/raw/master/long_phan_CV.pdf&embedded=true"><i
-            class="ai ai-cv fa-fw"></i> CV</a> -->
+          <!-- BLOOM -->
+          <li><a href="https://arxiv.org/abs/2211.05100">🤗 BLOOM: A 176B-Parameter Open-Access Multilingual Language
+              Model</a>
+            <br />
+            <a class="coauthor" href="https://scholar.google.com/citations?user=ik0_vxsAAAAJ&hl=en">Teven Le Scao</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=TLZR9zgAAAAJ&hl=en">Angela Fan</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=PzSym7oAAAAJ&hl=en">Christopher Akiki</a>,
+            ... ,
+            <strong class="myself">Long Phan</strong>, ... ,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=D2H5EFEAAAAJ&hl=en">Thomas Wolf</a>
+            <br /> [ <a class="pub_details" href="https://github.com/bigscience-workshop">Code</a> ]
+          </li>
 
-      </div>
+          <!-- ROOT -->
+          <li><a href="https://openreview.net/forum?id=UoEw6KigkUn">🤗 The BigScience ROOTS Corpus: A 1.6TB Composite
+              Multilingual Dataset
+            </a> <span class="vendor">NeurIPS 2022</span>
+            <br />
+            <a class="coauthor" href="https://twitter.com/hugolaurencon">Hugo Laurençon</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=Baj_9IsAAAAJ&hl=fr">Lucile Saulnier</a>,
+            <a class="coauthor">Thomas Wang</a>,
+            ... ,
+            <strong class="myself">Long Phan</strong>, ... ,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=AK_7EBgAAAAJ&hl=en">Yacine Jernite</a>
+            <br /> [ <a class="pub_details" href="https://github.com/bigscience-workshop">Code</a> ]
+          </li>
 
-    </header>
-    <section>
 
-      <!-- <p>Hi, I’m an undergraduate student at Case Western Reserve University with a concentration in <b>Natural Language
-          Processing (NLP)</b> research.
-        I previously interned at Twitter AI, Samsung Research America, and HuggingFace’s BigScience in AI Research.</p>
-      <p>I’m also an active member of <a href="https://vietai.org">VietAI</a>, supervised by <a
-          href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a>, where we focus on
-        bringing state-of-the-art research works to the community.</p> -->
-      <p> Hi, I'm currently a Research Engineer at <a href="https://www.safe.ai/" target="_blank">Center for AI Safety</a>, working with <a href="https://scholar.google.com/citations?user=czyretsAAAAJ&hl=en" target="_blank"> Dan Hendrycks</a>. I am interested in <b>AI Safety</b>.
-      </p>
-      <p>
-        I recieved a B.S in Computer Science from Case Western Reserve University in 2023. During my undergraduate studies, I worked with <a href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en" target="_blank">Trieu H. Trinh</a> and <a href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en" target="_blank">Minh-Thang Luong</a> (Google DeepMind).
-      </p>
-      <h3 id="publications-google-scholar">Research<span class="google_scholar"> [<a
-            href="https://scholar.google.com/citations?user=fVRQn4wAAAAJ&hl=en">Google Scholar</a>]</span></h3>
-      <ul>
-        <li><a href="https://www.circuit-breaker.ai/"><img src="assets/img/cb_logo.png" alt="Brain" class="emoji-icon">
-          Improving Alignment and Robustness with Circuit Breakers</a>
-          <br />
-          <a class="coauthor" href="https://andyzoujm.github.io/" target="_blank">Andy Zou</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="" target="_blank">Justin Wang</a>,
-          <a class="coauthor" href="" target="_blank">Derek Duenas</a>,
-          <a class="coauthor" href="" target="_blank">Maxwell Lin</a>,
-            <a class="coauthor" href="https://www.andriushchenko.me" target="_blank">Maksym Andriushchenko</a>,
-          <a class="coauthor" href="" target="_blank">Rowan Wang</a>,
-          <a class="coauthor" href="https://zicokolter.com/" target="_blank">Zico Kolter</a>,
+          <!-- ViT5 -->
+          <li><a href="https://aclanthology.org/2022.naacl-srw.18/">ViT5: Pretrained Text-to-Text Transformer for
+              Vietnamese Language Generation</a> <span class="vendor">NAACL SRW 2022</span>
+            <br />
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor">Tai Dang</a>,
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a>
+            <br /> [ <a class="pub_details" href="https://github.com/vietai/viT5">Code</a>
+            | <a class="pub_details" href="https://research.vietai.org/vit5/">Blog</a>
+            ]
+          </li>
 
-          <a class="coauthor" href="https://www.cs.cmu.edu/~mfredrik/" target="_blank">Matt Fredrikson</a>,
-                    <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>
-          <br /> [ <a class="pub_details" href="https://github.com/GraySwanAI/circuit-breakers"
-            target="_blank">Code</a> | <a class="pub_details" href="https://www.circuit-breaker.ai/"
-            target="_blank">Site</a>]
+          <!-- CoTexT -->
+          <li><a href="https://aclanthology.org/2021.nlp4prog-1.5">CoTexT: Multi-task Learning with Code-Text
+              Transformer</a> <span class="vendor">ACL NLP4Prog 2021</span>
+            <br />
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <a class="coauthor">Daniel Le</a>,
+            <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
+            <a class="coauthor">Alec Peltekian</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=egjr888AAAAJ&hl=en">Yanfang Ye</a>
+            <br /> [ <a class="pub_details" href="https://github.com/justinphan3110/cotext">Code</a>
+            ]
+          </li>
+
+          <!-- HAL-X -->
+          <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010349">HAL-X: Scalable
+              hierarchical clustering for rapid and tunable single-cell analysis</a> <span class="vendor">PLOS
+              Computational Biology</span>
+            <br />
+            <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
+            <a class="coauthor" href="https://scholar.google.ca/citations?user=OQK_iFEAAAAJ&hl=en">Alexandre G. Day</a>,
+            <a class="coauthor">Erol Bahadroglu</a>,
+            <a class="coauthor">Liam O'Neil</a>,
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor">Alec Peltekian</a>,
+            <a class="coauthor" href="https://scholar.google.co.il/citations?user=iw1X5RgAAAAJ&hl=en">Amir Erez</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=sa8FGCwAAAAJ&hl=en">Mariana Kaplan</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=9hotgL4AAAAJ&hl=en">Grégoire
+              Altan-Bonnet</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=LQq-pwEAAAAJ&hl=en">Pankaj Mehta</a>
+          </li>
+
+          <!-- SciFive -->
+          <li><a href="https://arxiv.org/abs/2106.03598">Scifive: a text-to-text transformer model for biomedical
+              literature</a> <span class="vendor">arXiv preprint</span>
+            <br />
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=687iyvkAAAAJ&hl=en">Shaurya Chanana</a>,
+            <a class="coauthor">Erol Bahadroglu</a>,
+            <a class="coauthor">Alec Peltekian</a>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=9hotgL4AAAAJ&hl=en">Grégoire
+              Altan-Bonnet</a>
+            <br /> [ <a class="pub_details" href="https://github.com/justinphan3110/scifive">Code</a>
+            ]
+          </li>
+
+          <!-- SPBERT -->
+          <li><a href="https://arxiv.org/abs/2106.09997">SPBERT: An Efficient Pre-training BERT on SPARQL Queries for
+              Question Answering over Knowledge Graphs</a> <span class="vendor">ICONIP 2021</span>
+            <br />
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
+            <a class="coauthor">Binh T. Nguyen</a>,
+            <a class="coauthor">Truong-Son Nguyen</a>
+            <br /> [ <a class="pub_details" href="https://github.com/heraclex12/NLP2SPARQL">Code</a>
+            ]
+          </li>
+
+          <!-- Spelling -->
+          <li><a href="https://arxiv.org/abs/2105.13578">Hierarchical Transformer Encoders for Vietnamese Spelling
+              Correction</a> <span class="vendor">EA/AIE 2021</span>
+            <br />
+            <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
+            <a class="coauthor">Cuong Dinh</a>,
+            <strong class="myself">Long Phan</strong>,
+            <a class="coauthor">Truong-Son Nguyen</a>
+          </li>
+
+
+        </ul>
+      </section>
+
+      <section class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li><img src="assets/img/lol-logo (1).png" alt="League of Legends Logo" style="height: 1.2em; vertical-align: middle;"> Rank Master in League of Legends (top 0.3%), Season 2023:<br>
+            - 🥇 Rank 1 Amumu in North America (Rank 3 globally)<br>
+            - 🥉 Rank 3 Gragas in North America<br>
         </li>
-        <!-- HarmBench-->
-        <li><a href="https://www.harmbench.org"><img src="assets/img/harmbench_logo.png" alt="Brain" class="emoji-icon-harmbench">
-          HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal</a>
-          <br />
-          <a class="coauthor" href="https://scholar.google.com/citations?user=fGeEmLQAAAAJ&hl=en" target="_blank">Mantas
-            Mazeika</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="https://xuwangyin.github.io/" target="_blank">Xuwang Yin</a>,
-          <a class="coauthor" href="https://andyzoujm.github.io" target="_blank">Andy Zou</a>,
-          <a class="coauthor" href="https://sites.google.com/west.cmu.edu/zifan-wang/home" target="_blank">Zifan
-            Wang</a>,
-            <a class="coauthor" href="https://www.normanmu.com/" target="_blank">Norman Mu</a>,
-            Ellie Sakhaee,
-          <a class="coauthor" href="https://nat.quest/" target="_blank">Nathaniel Li</a>,
-          <a class="coauthor" href="https://stevenbas.art/" target="_blank">Steven Basart</a>,
-          <a class="coauthor" href="https://aisecure.github.io/" target="_blank">Bo Li</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=5H0arvkAAAAJ&hl=en" target="_blank">David Forsyth</a>,
-          <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>
-          <br /> [ <a class="pub_details" href="https://github.com/centerforaisafety/HarmBench"
-            target="_blank">Code</a> | <a class="pub_details" href="https://www.harmbench.org/"
-            target="_blank">Site</a>]
-        </li>
-
-        <!-- RepE -->
-        <li><a href="https://arxiv.org/abs/2310.01405"><img src="assets/img/repe_logo.png" alt="Brain" class="emoji-icon">
-          Representation Engineering: A Top-Down Approach to AI
-            Transparency</a>
-          <br />
-          <a class="coauthor" href="https://andyzoujm.github.io" target="_blank">Andy Zou</a>,
-          <strong class="myself">Long Phan</strong>,
-          Sarah Chen,
-          James Campbell,
-          Phillip Guo,
-          Richard Ren,
-          <a class="coauthor" href="https://aypan17.github.io/" target="_blank">Alexander Pan</a>,
-          <a class="coauthor" href="https://xuwangyin.github.io/" target="_blank">Xuwang Yin</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=fGeEmLQAAAAJ&hl=en" target="_blank">Mantas
-            Mazeika</a>,
-          Ann-Kathrin Dombrowski,
-          Shashwat Goel,
-          <a class="coauthor" href="https://nat.quest/" target="_blank">Nathaniel Li</a>,
-          Michael J. Byun,
-          <a class="coauthor" href="https://sites.google.com/west.cmu.edu/zifan-wang/home" target="_blank">Zifan
-            Wang</a>,
-          Alex Mallen,
-          <a class="coauthor" href="https://stevenbas.art/" target="_blank">Steven Basart</a>,
-          <a class="coauthor" href="https://cs.stanford.edu/~sanmi/" target="_blank">Sanmi Koyejo</a>,
-          <a class="coauthor" href="https://dawnsong.io/" target="_blank">Dawn Song</a>,
-          <a class="coauthor" href="https://www.cs.cmu.edu/~mfredrik/" target="_blank">Matt Fredrikson</a>,
-          <a class="coauthor" href="https://zicokolter.com/" target="_blank">Zico Kolter</a>,
-          <a class="coauthor" href="https://people.eecs.berkeley.edu/~hendrycks/" target="_blank">Dan Hendrycks</a>
-          <br /> [ <a class="pub_details" href="https://github.com/andyzoujm/representation-engineering"
-            target="_blank">Code</a> | <a class="pub_details" href="https://www.ai-transparency.org/"
-            target="_blank">Demo</a> | <a class="pub_details" href="https://www.foxnews.com/us/researchers-shed-light-how-read-control-ai-systems-minds?fbclid=IwAR2tz842osxnwju_Kk8i0YCsWWc8Rn6Q2cX3pfbK5T0RBQiJ3zhgf2cCLi8_aem_AUp3P_0m0jMChtrkIrghFTM2PvTCVrWPz9fy3suzkWbgrnjMMirot4TwxBZZ0XDUnbg"
-            target="_blank">Fox News</a>]
-        </li>
-
-        <!-- ViPubmed -->
-        <li><a href="https://arxiv.org/abs/2210.05598">🌸 Enriching Biomedical Knowledge for Low-resource
-            Language Through Large-Scale Translation</a> <span class="vendor">EACL 2023</span>
-          <br />
-          <b>{</b>
-          <strong class="myself">Long Phan</strong>,
-          Tai Dang,
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a> <b>}</b>,
-         Vy Phan,
-         Lam Chau,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a>
-
-          <br /> [ <a class="pub_details" href="https://github.com/vietai/ViPubmed">Code</a> ]
-        </li>
-
-        <!-- MTet -->
-        <li><a href="https://arxiv.org/abs/2210.05610">🌸 MTet: Multi-domain Translation for English and Vietnamese</a>
-          <!-- <span class="vendor">In review @ EACL 2023</span> -->
-          <br />
-          <b>{</b>
-          <a class="coauthor" href="https://github.com/ntkchinh">Chinh Ngo</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a><b> }</b>,
-          <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>
-          <a class="coauthor" href="https://scholar.google.com/citations?user=Bmbkv6sAAAAJ&hl=en">Minh-Thang Luong</a>
-          <br /> [ <a class="pub_details" href="https://github.com/vietai/mtet">Code</a>
-          | <a class="pub_details" href="https://research.vietai.org/mtet/">Blog</a>
-          ]
-        </li>
-
-
-
-        <!-- BLOOM -->
-        <li><a href="https://arxiv.org/abs/2211.05100">🤗 BLOOM: A 176B-Parameter Open-Access Multilingual Language
-            Model</a>
-          <br />
-          <a class="coauthor" href="https://scholar.google.com/citations?user=ik0_vxsAAAAJ&hl=en">Teven Le Scao</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=TLZR9zgAAAAJ&hl=en">Angela Fan</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=PzSym7oAAAAJ&hl=en">Christopher Akiki</a>,
-          ... ,
-          <strong class="myself">Long Phan</strong>, ... ,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=D2H5EFEAAAAJ&hl=en">Thomas Wolf</a>
-          <br /> [ <a class="pub_details" href="https://github.com/bigscience-workshop">Code</a> ]
-        </li>
-
-        <!-- ROOT -->
-        <li><a href="https://openreview.net/forum?id=UoEw6KigkUn">🤗 The BigScience ROOTS Corpus: A 1.6TB Composite
-            Multilingual Dataset
-          </a> <span class="vendor">NeurIPS 2022</span>
-          <br />
-          <a class="coauthor" href="https://twitter.com/hugolaurencon">Hugo Laurençon</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=Baj_9IsAAAAJ&hl=fr">Lucile Saulnier</a>,
-          <a class="coauthor">Thomas Wang</a>,
-          ... ,
-          <strong class="myself">Long Phan</strong>, ... ,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=AK_7EBgAAAAJ&hl=en">Yacine Jernite</a>
-          <br /> [ <a class="pub_details" href="https://github.com/bigscience-workshop">Code</a> ]
-        </li>
-
-
-        <!-- ViT5 -->
-        <li><a href="https://aclanthology.org/2022.naacl-srw.18/">ViT5: Pretrained Text-to-Text Transformer for
-            Vietnamese Language Generation</a> <span class="vendor">NAACL SRW 2022</span>
-          <br />
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor">Tai Dang</a>,
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=PEjJU54AAAAJ&hl=en">TH Trieu</a>
-          <br /> [ <a class="pub_details" href="https://github.com/vietai/viT5">Code</a>
-          | <a class="pub_details" href="https://research.vietai.org/vit5/">Blog</a>
-          ]
-        </li>
-
-        <!-- CoTexT -->
-        <li><a href="https://aclanthology.org/2021.nlp4prog-1.5">CoTexT: Multi-task Learning with Code-Text
-            Transformer</a> <span class="vendor">ACL NLP4Prog 2021</span>
-          <br />
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <a class="coauthor">Daniel Le</a>,
-          <a class="coauthor" href="https://www.linkedin.com/in/hieu-nguyen2405">Hieu Nguyen</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
-          <a class="coauthor">Alec Peltekian</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=egjr888AAAAJ&hl=en">Yanfang Ye</a>
-          <br /> [ <a class="pub_details" href="https://github.com/justinphan3110/cotext">Code</a>
-          ]
-        </li>
-
-        <!-- HAL-X -->
-        <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010349">HAL-X: Scalable
-            hierarchical clustering for rapid and tunable single-cell analysis</a> <span class="vendor">PLOS
-            Computational Biology</span>
-          <br />
-          <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
-          <a class="coauthor" href="https://scholar.google.ca/citations?user=OQK_iFEAAAAJ&hl=en">Alexandre G. Day</a>,
-          <a class="coauthor">Erol Bahadroglu</a>,
-          <a class="coauthor">Liam O’Neil</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor">Alec Peltekian</a>,
-          <a class="coauthor" href="https://scholar.google.co.il/citations?user=iw1X5RgAAAAJ&hl=en">Amir Erez</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=sa8FGCwAAAAJ&hl=en">Mariana Kaplan</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=9hotgL4AAAAJ&hl=en">Grégoire
-            Altan-Bonnet</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=LQq-pwEAAAAJ&hl=en">Pankaj Mehta</a>
-        </li>
-
-        <!-- SciFive -->
-        <li><a href="https://arxiv.org/abs/2106.03598">Scifive: a text-to-text transformer model for biomedical
-            literature</a> <span class="vendor">arXiv preprint</span>
-          <br />
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=687iyvkAAAAJ&hl=en">Shaurya Chanana</a>,
-          <a class="coauthor">Erol Bahadroglu</a>,
-          <a class="coauthor">Alec Peltekian</a>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=9hotgL4AAAAJ&hl=en">Grégoire
-            Altan-Bonnet</a>
-          <br /> [ <a class="pub_details" href="https://github.com/justinphan3110/scifive">Code</a>
-          ]
-        </li>
-
-        <!-- SPBERT -->
-        <li><a href="https://arxiv.org/abs/2106.09997">SPBERT: An Efficient Pre-training BERT on SPARQL Queries for
-            Question Answering over Knowledge Graphs</a> <span class="vendor">ICONIP 2021</span>
-          <br />
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor" href="https://scholar.google.com/citations?user=uPaDB5gAAAAJ&hl=en">James Anibal</a>,
-          <a class="coauthor">Binh T. Nguyen</a>,
-          <a class="coauthor">Truong-Son Nguyen</a>
-          <br /> [ <a class="pub_details" href="https://github.com/heraclex12/NLP2SPARQL">Code</a>
-          ]
-        </li>
-
-        <!-- Spelling -->
-        <li><a href="https://arxiv.org/abs/2105.13578">Hierarchical Transformer Encoders for Vietnamese Spelling
-            Correction</a> <span class="vendor">EA/AIE 2021</span>
-          <br />
-          <a class="coauthor" href="https://github.com/heraclex12">Hieu Tran</a>,
-          <a class="coauthor">Cuong Dinh</a>,
-          <strong class="myself">Long Phan</strong>,
-          <a class="coauthor">Truong-Son Nguyen</a>
-        </li>
-
-
-      </ul>
-
-      <h3 id="service">Achievements</h3>
-
-      <ul>
-        <li>🎮 Master Rank in League of Legends (top 0.4%), Season 2023:<br>
-          - 🥉 Ranked Top 3 Amumu globally (Top 1 in North America)<br>
-          - 🥉 Ranked Top 3 Gragas in North America<br>
-      </li>
-      </ul>
-
-
-
-    </section>
-    <footer>
-
-      <p><small>Adapted from <a href="https://github.com/orderedlist/minimal">Minimal</a> by <a
-            href="https://github.com/orderedlist">orderedlist</a></small></p>
-    </footer>
+        </ul>
+      </section>
+    </main>
   </div>
 </body>
 

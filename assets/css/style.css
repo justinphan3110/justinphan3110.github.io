@@ -244,10 +244,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
-  margin: 0 0 20px; }
+  margin: 0; }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px; }
+  margin: 0; }
 
 h1, h2, h3 {
   line-height: 1.1; }
@@ -262,12 +262,15 @@ h3, h4, h5, h6 {
   color: #494949; }
 
 a {
-  color: #267CB9;
-  text-decoration: none; }
+  color: #18181b;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(24, 24, 27, 0.2); }
 
 a:hover, a:focus {
-  color: #069;
-  font-weight: bold; }
+  color: #18181b;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(24, 24, 27, 0.8); }
 
 a small {
   font-size: 11px;
@@ -375,9 +378,9 @@ strong {
   color: #222; }
 
 section {
-  width: 500px;
-  float: right;
-  padding-bottom: 50px; }
+  width: auto;
+  float: none;
+  padding-bottom: 30px; }
 
 small {
   font-size: 11px; }
@@ -492,14 +495,39 @@ a.affiliation:hover, a.affiliation:focus {
   color: #555555; }
 
 a.pub_details {
-  color: #44a774; }
+  color: #16a34a;
+  border-bottom: 1px solid rgba(22, 163, 74, 0.2); }
+
+a.pub_details:hover, a.pub_details:focus {
+  color: #15803d;
+  border-bottom: 1px solid rgba(22, 163, 74, 0.8); }
 
 a.pub_resources:hover, a.pub_details:focus {
   color: #009926; }
 
 a.coauthor {
-  color: #727272; }
+  color: #71717a;
+  border-bottom: none; }
 
+a.coauthor:hover, a.coauthor:focus {
+  color: #52525b;
+  font-weight: normal;
+  border-bottom: none; }
+
+a.paper-title {
+  color: #18181b;
+  border-bottom: 1px solid rgba(24, 24, 27, 0.2); }
+
+a.paper-title:hover, a.paper-title:focus {
+  border-bottom: 1px solid rgba(24, 24, 27, 0.8); }
+
+a:has(img) {
+  border-bottom: none;
+}
+
+a:has(img):hover {
+  border-bottom: none;
+}
 
 .emoji-icon {
     width: 1.8em;        /* Match the width to the current font size */
@@ -571,3 +599,251 @@ span.important {
 
   section {
     width: auto; } }
+
+/* Main layout */
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1.2rem;
+  height: fit-content;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+/* Profile image adjustments */
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+  object-fit: cover;
+  object-position: 0 10%; /* Shifts the image up within the circle */
+  border: 2px solid #eee;
+}
+
+.profile-section h1 {
+  font-size: 1.5rem;
+  margin: 0.4rem 0;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.social-links a {
+  font-size: 1.3rem;
+  color: #555;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Content area */
+.content {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Section spacing adjustments */
+section {
+  margin-bottom: 0.6rem; /* Significantly reduced */
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0; /* Removed margin */
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  border-bottom: none;  /* Remove the border/underline */
+  padding-bottom: 0.2rem;
+}
+
+/* Publications and achievements sections */
+.publications ul, 
+.achievements ul {
+  padding-left: 1rem;
+  margin-top: 0; /* Removed margin */
+}
+
+.publications li, 
+.achievements li {
+  margin-bottom: 1rem;  /* Increase space between papers */
+}
+
+/* Keep the last paper's spacing consistent with the section */
+.publications li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    word-wrap: break-word;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 0.8rem;
+    gap: 0.8rem;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .sidebar {
+    position: static;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Make long URLs and text wrap */
+  a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Adjust list items for better mobile display */
+  .publications li, 
+  .achievements li {
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust text sizes for readability */
+  .bio {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Additional mobile optimization */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .wrapper {
+    padding: 0.5rem;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  /* Further reduce sizes for very small screens */
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .publications li, 
+  .achievements li {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust spacing */
+  section {
+    padding-bottom: 20px;
+  }
+}
+
+/* Social links should not have underlines */
+.social-links a {
+  border-bottom: none;
+}
+
+.social-links a:hover {
+  border-bottom: none;
+}
+
+/* Add a new rule specifically for paper links with images */
+.publications li a:has(img) {
+  border-bottom: 1px solid rgba(24, 24, 27, 0.2);
+}
+
+.publications li a:has(img):hover {
+  border-bottom: 1px solid rgba(24, 24, 27, 0.8);
+}
+
+/* Keep social links and other image links without underlines */
+.social-links a:has(img),
+.achievements a:has(img) {
+  border-bottom: none;
+}
+
+.social-links a:has(img):hover,
+.achievements a:has(img):hover {
+  border-bottom: none;
+}
+
+/* Add a specific style for the Google Scholar link */
+.scholar-link {
+  font-size: 0.9rem;  /* Slightly smaller text */
+  margin-left: 0.5rem;  /* Add some space between title and link */
+  color: #71717a;  /* Lighter color to distinguish from section title */
+}
+
+.scholar-link:hover {
+  color: #52525b;
+}
+
+/* Publication list styling */
+.publications li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
