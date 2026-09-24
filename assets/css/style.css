@@ -847,3 +847,6 @@ h2 {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+span.pub_desc {
+  color: #333333; }
